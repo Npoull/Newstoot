@@ -1,0 +1,219 @@
+/*
+Theme Name: NewsToot
+Theme URI: http://wordpress.org/extend/themes/twentyeleven
+Author: the WordPress team
+Author URI: http://wordpress.org/
+Description: The 2011 theme for WordPress is sophisticated, lightweight, and adaptable. Make it yours with a custom menu, header image, and background -- then go further with available theme options for light or dark color scheme, custom link colors, and three layout choices. Twenty Eleven comes equipped with a Showcase page template that transforms your front page into a showcase to show off your best content, widget support galore (sidebar, three footer areas, and a Showcase page widget area), and a custom "Ephemera" widget to display your Aside, Link, Quote, or Status posts. Included are styles for print and for the admin editor, support for featured images (as custom header images on posts and pages and as large images on featured "sticky" posts), and special styles for six different post formats.
+Version: 1.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: twentyeleven
+*/
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0; }
+
+/*
+#main{
+	position: absolute;
+	min-height: 100%;
+	max-width: 1100px;
+	box-shadow: $shadow;
+	left:0;
+	right: 0;	
+	margin: 0 auto;
+	@include leftRightBorder;
+	overflow: hidden;
+}*/
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto; }
+
+#main .wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  top: 50px; }
+
+a {
+  color: #444; }
+
+#intro {
+  background: #3d9ae8; }
+
+#content-wrapper {
+  max-width: 1100px;
+  margin: 0 auto; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+#overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  background: #fff;
+  z-index: 99;
+  display: none;
+  margin-top: 90px; }
+
+/*===============
+	HEADER
+================*/
+header {
+  padding: 20px;
+  box-shadow: 0px 0px 8px #d1d1d1;
+  background: #fff; }
+
+header .wrapper div {
+  display: inline-block;
+  vertical-align: middle; }
+header .wrapper #nav {
+  float: right; }
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+  top: 7px; }
+
+/*===============
+	INTRO
+================*/
+.intro {
+  min-height: 100px;
+  padding-top: 40px;
+  color: #fff; }
+
+/*===============
+	LATEST
+================*/
+#latest {
+  background: #007cc3;
+  padding: 20px;
+  color: #fff;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
+
+.close {
+  display: none; }
+
+.excerpt {
+  padding: 0px;
+  padding-top: 40px;
+  margin-left: 20px;
+  width: 300px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in; }
+
+.article:hover {
+  cursor: pointer; }
+
+.article:hover .excerpt {
+  -webkit-transition: opacity 0.5s ease-in;
+  opacity: 1; }
+
+.rating-home {
+  margin-left: 20px;
+  margin-top: 40px; }
+
+.rating-home h1 {
+  letter-spacing: 0px; }
+
+/*===============
+	ARTICLES
+================*/
+#articles {
+  margin-top: 40px; }
+
+.article {
+  width: 362px;
+  height: 400px;
+  vertical-align: top;
+  display: inline-block;
+  background: #3d9ae8;
+  color: #fff;
+  box-shadow: 0px 0px 8px rgba(190, 190, 190, 0.9);
+  position: relative; }
+
+.article-source {
+  color: #fff;
+  font-size: 40px;
+  left: 10px; }
+
+.article a {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  color: #fff; }
+
+.article-meta {
+  position: relative;
+  left: 20px;
+  top: 20px; }
+
+#comment-list {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  background: #fc3;
+  padding: 20px; }
+
+.comment {
+  padding: 20px; }
+
+/*===============
+	COMMENTS
+================*/
+/*===============
+	POST
+================*/
+#post-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 40px; }
+
+.post-title {
+  margin-bottom: 20px; }
+
+body {
+  font-family: "proxima-nova-soft","futura-pt",sans-serif; }
+
+h1, h2 {
+  letter-spacing: -2px; }
+
+h2 {
+  font-weight: 100; }
+
+/*===============
+	HEADER
+================*/
+header #site-title {
+  letter-spacing: -1px;
+  font-size: 1.5em; }
+header #title p {
+  font-size: 95%; }
+
+/*===============
+	INTRO
+================*/
+.intro h2 {
+  font-size: 3.5em;
+  font-weight: 100;
+  letter-spacing: -2px; }
+
+/*===============
+	LATEST
+================*/
+#latest h2 {
+  font-size: 2em;
+  font-weight: 100;
+  letter-spacing: 2px; }
+
+.copy {
+  max-width: 1100px;
+  margin: 0 auto; }
